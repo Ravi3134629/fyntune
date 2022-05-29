@@ -1,0 +1,21 @@
+.header{
+    width: 100%;
+   position: sticky;
+   top: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    z-index: 999;
+    background-color: #fff;
+    
+}
+.header__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.brand-name{
+    font-weight: 600;
+}

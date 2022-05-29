@@ -1,0 +1,78 @@
+.home__jumbotron {
+  width: 90%;
+  margin: 75px auto;
+  padding-top: 16px;
+  background-color: rgb(203 211 255);
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+.home__jumbotron h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 0;
+  line-height: 44px;
+}
+
+.cirlce_first {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 255, 0.484);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50%;
+}
+.cirlce_second {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(29, 255, 168, 0.484);
+}
+
+.clear_btn {
+  background-color: red;
+}
+
+.search_input {
+  width: 330px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #fff;
+}
+.search_input input {
+  outline: 0;
+}
+
+.shops__container {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  display: block;
+  grid-gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+}
+
+@media screen and (min-width: 565px) {
+  .shops__container {
+    display: grid;
+  }
+  .home__jumbotron {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .home__jumbotron h2 {
+    font-size: 4vw;
+    line-height: 72px;
+  }
+}

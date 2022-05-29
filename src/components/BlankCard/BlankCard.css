@@ -1,0 +1,125 @@
+.blank-shop-card {
+  width: 100%;
+
+  background-color: #fffbfe;
+  border: 1px solid #dbdbdb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.blank-shop-card-header {
+  padding: 13px 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.blank-shop-card-author {
+  width: 40px;
+  height: 40px;
+  background-color: #eee;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.blank-shop-card-thumbnail {
+  width: 100%;
+  height: 188px;
+  background: #f0f0f0;
+
+  position: relative;
+  overflow: hidden;
+}
+.blank-shop-card-thumbnail::after,
+.blank-shop-card-author::after,
+.button-blank::after,
+.blank-shop-description::after,
+.blank-shop-name::after,
+.blank-shop-location::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.9),
+    transparent
+  );
+
+  animation: loading 0.6s infinite;
+}
+
+.blank-shop-card-body,
+.blank-shop-card-footer {
+  padding: 16px;
+}
+
+.blank-shop-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+}
+
+.button-blank {
+  padding: 10px 24px;
+  height: 42px;
+  background: #eee;
+  border: 1px solid;
+  min-width: 99px;
+  border-radius: 100px;
+  gap: 8px;
+  font-weight: 700;
+  position: relative;
+  overflow: hidden;
+}
+.btn-primary {
+  border: 1px solid #79747e;
+  margin-right: 18px;
+  color: #6750a4;
+}
+.btn-secondary {
+  border: 0;
+  background-color: #6750a4;
+  color: #fff;
+}
+
+.blank-shop-name {
+  width: 230px;
+  height: 8px;
+  background-color: #eee;
+  border-radius: 65px;
+  overflow: hidden;
+  position: relative;
+}
+.blank-shop-location {
+  width: 175px;
+  height: 8px;
+  background-color: #eee;
+  margin-top: 5px;
+  border-radius: 65px;
+  overflow: hidden;
+  position: relative;
+}
+
+.blank-shop-description {
+  width: 95%;
+  height: 8px;
+  background-color: #eee;
+  margin-top: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes loading {
+  0% {
+    transform: skew(-10deg) translateX(-100%);
+  }
+  100% {
+    transform: skew(-10deg) translateX(200%);
+  }
+}
